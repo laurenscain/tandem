@@ -14,9 +14,12 @@ export const Tile: React.FC<Props> = ({ tile }) => {
   const getValue = () => {
     let v = utils[tile](tileData);
 
-    v = v % 1 != 0 ? v.toPrecision(5) : v;
     if(Number.isNaN(v) || v === 'NaN') v = '';
-    
+    else if(typeof v === 'object') 
+      v = v.join(', ');
+    else if(v)
+        v = v % 1 != 0 ? v.toPrecision(5) : v;
+
     setValue(v);
   };
 

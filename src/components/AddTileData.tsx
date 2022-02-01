@@ -22,7 +22,7 @@ export const AddTileData: React.FC<Props> = ({ addData }) => {
   return (
     <form onSubmit={addNewData} className="formData">
       <input type="number" value={newData || ''} onChange={handleTileData} />
-      <button onClick={(e) => addNewData(e)} disabled={newData === undefined ? true : false}>Add Number</button>
+      <button onClick={(e) => addNewData(e)} disabled={newData === undefined || newData === 0 ? true : false}>Add Number</button>
   </form>
 
   );
