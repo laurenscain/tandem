@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+main {
+  width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+main > h1 {
+  text-align: center;
+}
+
+.formData {
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  width: 300px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+.Add-article input {
+  display: block;
+  margin: 1rem auto;
+  width: 20rem;
+  padding: 0.5rem;
+  border: 1px solid #00b8e6;
+  border-radius: 10px;
+  outline: none;
+}
+
+.Add-article button {
+  width: 21rem;
+  padding: 0.7rem;
+  border: 1px solid #00b8e6;
+  background: #00b8e6;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Add-article button:hover {
+  background: #0093b8;
+}
+
+.Add-article button:disabled {
+  background: #d8d8d8;
+  border: 1px solid #d8d8d8;
+  cursor: not-allowed;
+}
+
+.Tile {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+  margin: 20px;
+  background: #fff;
+  border-radius: 5px;
+  border: solid 1px #cdcdcd;
+}
+
+.tileDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Tile span {
+  color: #222;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.errorTxt {
+  color: #d34b4b;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.Article p {
+  padding-right: 1rem;
+  color: #444;
+}
+.Article button {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d34b4b;
+  background: #d34b4b;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Article button:hover {
+  background: #e06a6a;
+}
